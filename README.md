@@ -1,6 +1,6 @@
-# q-tools (QEMU Tools)
+# q-toolkit (QEMU Toolkit)
 
-q-tools is a collection of utility scripts for managing and interacting with QEMU virtual machines. 
+q-toolkit is a collection of utility scripts for managing and interacting with QEMU virtual machines. 
 
 ## Tools
 
