@@ -4,7 +4,7 @@ q-toolkit is a collection of utility scripts for managing and interacting with Q
 
 ## Tools
 
-### q-cp (QEMU Copy)
+### q-cp
 
 A script for copying files between the host and QEMU virtual machines.
 
@@ -23,7 +23,7 @@ $ q-cp /path/on/host domain:/path/in/vm
 $ q-cp domain:/path/in/vm /path/on/host
 ```
 
-### q-exec (QEMU Execute)
+### q-exec
 
 A script for executing commands in QEMU virtual machines.
 
