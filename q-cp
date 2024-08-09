@@ -1,21 +1,22 @@
 #!/bin/bash
+SCRIPT_NAME="$(basename "$0")"
 
 # Function to print usage
 print_usage() {
     echo "Usage:"
-    echo "  $0 <source_path> <destination_path>"
+    echo "  ${SCRIPT_NAME} <source_path> <destination_path>"
     echo ""
     echo "To copy from host to VM:"
-    echo "  $0 /path/on/host domain:/path/in/vm"
+    echo "  ${SCRIPT_NAME} /path/on/host domain:/path/in/vm"
     echo ""
     echo "To copy from VM to host:"
-    echo "  $0 domain:/path/in/vm /path/on/host"
+    echo "  ${SCRIPT_NAME} domain:/path/in/vm /path/on/host"
     echo ""
     echo "Example (host to VM):"
-    echo "  $0 /home/user/file.txt my_vm:/tmp/file.txt"
+    echo "  ${SCRIPT_NAME} /home/user/file.txt my_vm:/tmp/file.txt"
     echo ""
     echo "Example (VM to host):"
-    echo "  $0 my_vm:/etc/hosts /home/user/vm_hosts"
+    echo "  ${SCRIPT_NAME} my_vm:/etc/hosts /home/user/vm_hosts"
 }
 
 # Function to parse path and extract domain if present

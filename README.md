@@ -29,7 +29,7 @@ A script for executing commands in QEMU virtual machines.
 
 **Usage:**
 ```
-q-exec [-it] <domain> [-- <command>]
+q-exec [-it] <domain> -- <command>
 ```
 
 **Examples:**
@@ -37,6 +37,6 @@ q-exec [-it] <domain> [-- <command>]
 # Execute command in VM
 q-exec my_vm -- ls -la /home
 
-# Execute commands in VM (interactive)
-q-exec -it my_vm 
+# Start interactive shell in VM
+q-exec -it my_vm -- /bin/sh
 ```
